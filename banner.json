@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-49-fleet",
+  "eyebrow": "PICOKIT // LESSON 49",
+  "title": "PICOKIT // FLEET",
+  "subtitle": "FLEET TABLE + MULTI-NODE GATEWAY",
+  "accent": "#C024FF",
+  "dim": "#77169E",
+  "white": "#EBD7FF",
+  "cyan": "#7FD8E0",
+  "bg": "#0D0211",
+  "bg_edge": "#030005",
+  "icon": "wifi",
+  "panel_status": "FLEET  ·  3 NODES  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "FLEET",
+      "value": "1/2/3"
+    },
+    {
+      "label": "NODES",
+      "value": "tracked"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-44 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00049  seq 11  HEARTBEAT  AEAD ok",
+    "[*] fleet 2  latest frame per node stored",
+    "[+] nodes tracked 3  rssi -44  snr 7.0",
+    "[+] anti-replay window ok  counter 11"
+  ],
+  "categories": [
+    "FLEET",
+    "CONFIG",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "FLEET-1",
+      "label": "alpha",
+      "value": "5 s"
+    },
+    {
+      "tag": "FLEET-2",
+      "label": "bravo",
+      "value": "5 s"
+    },
+    {
+      "tag": "FLEET-3",
+      "label": "charlie",
+      "value": "5 s"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  N NODES TRACKED  ·  FLEET TABLE  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ FLEET ]=="
+  ],
+  "layout": "stat",
+  "stat": "3"
+}
